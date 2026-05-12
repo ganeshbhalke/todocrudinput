@@ -40,37 +40,37 @@ onRemove(id:string){
 
   // let getConfirm=confirm('Are you sure?')
   // if(getConfirm){
-//     console.log(id);
+    console.log(id);
 
-//         let confirm=new MatDialogConfig()
-//         confirm.width='300px',
-//         confirm.disableClose=true
+        let confirm=new MatDialogConfig()
+        confirm.width='300px',
+        confirm.disableClose=true
         
 
-//        let matDialogRef= this._matdialog.open(GetConfiremComponent,confirm )
+       let matDialogRef= this._matdialog.open(GetConfiremComponent,confirm )
         
-//        matDialogRef.afterClosed().subscribe(getConfrimation =>{
-//         if(getConfrimation === true){
-//           this.emitRemoveid.emit(id)
+       matDialogRef.afterClosed().subscribe(getConfrimation =>{
+        if(getConfrimation === true){
+          this.emitRemoveid.emit(id)
 
   
-//  }
-// })
+ }
+})
 
     
   
 
-  let getPassword = prompt('Enter Password');
+  // let getPassword = prompt('Enter Password');
 
-  if(getPassword === '932291'){
+  // if(getPassword === '932291'){
 
-    this.emitRemoveid.emit(id)
+  //   this.emitRemoveid.emit(id)
 
-  }else{
+  // }else{
 
-    alert('Enter your Invalid  Password Plz try again')
+  //   alert('Enter your Invalid  Password Plz try again')
 
-  }
+  // }
 
 }
 }

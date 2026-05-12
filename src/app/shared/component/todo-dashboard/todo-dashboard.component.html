@@ -1,0 +1,21 @@
+
+<div class="row mt-5">
+    <div class="col-md-6">
+        <app-todo-from 
+        (emitUpdatedTodo)="getUpdateTodo($event)"
+        [getEditobj]="editTodoobj"
+        (emitNewTodo)="getNewTodo($event)"
+        >
+  <!-- ek coustom event hai emitter ka  or callbackfun dasboard parent componwwnt me hai  -->
+
+
+        </app-todo-from>
+    </div>
+    <div class="col-md-6">
+        <app-todo-list [getTodos]="todoArr" 
+                (emitRemoveid)="getRemoveId($event)"
+                (emitEditTodo)="getEditTodo($event)"
+        ></app-todo-list>
+    </div>
+</div>
+
